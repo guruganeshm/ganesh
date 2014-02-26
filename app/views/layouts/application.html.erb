@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-overrides.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection" />    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+  <body class="pull_top">
+ <%= render partial: 'layouts/header' %>
+    <%= yield %>
+    <%= render partial: 'layouts/footer'%>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script type="text/javascript" src="js/index-slider.js"></script>	
+</body>
+</html>

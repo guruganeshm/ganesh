@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign-In</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-overrides.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection" />
+    <link rel="stylesheet" href="css/sign-in.css" type="text/css" media="screen" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+
+<br/>
+<br/>
+
+<body>
+
+    <!-- Sign In Option 1 -->
+    <div id="sign_in1">
+        <div class="container">
+            <div class="row">
+                <div class="span12 header">
+                    
+                    <h4>Log in to your account</h4>
+                    <p>
+                        There are many variations of passages of Lorem alteration in some form  injected humour these randomised words .</p>
+
+                    <div class="span4 social">
+                        <a href="#" class="circle facebook">
+                            <img src="img/face.png" alt="Facebook" />
+                        </a>
+                         <a href="#" class="circle twitter">
+                            <img src="img/twt.png" alt="Twitter" />
+                        </a>
+                         <a href="#" class="circle gplus">
+                            <img src="img/gplus.png" alt="GooglePlus" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="span3 division">
+                    <div class="line l"></div>
+                    <span>or</span>
+                    <div class="line r"></div>
+                </div>
+
+                <div class="span12 footer">
+                  <form action ='/login' method='post' />
+                    <input type="text" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                        <input type="submit" placeholder="Confirm Password" value="sign in" />
+                    </form>
+                </div>
+
+                <div class="span12 proof">
+                    <div class="span5 remember">
+                        <label class="checkbox">
+                            <input type="checkbox" /> Remember me
+                        </label>
+                        <a href="reset.html">Forgot password?</a>
+                    </div>
+
+                    <div class="span3 dosnt">
+                        <span>Don’t have an account?</span>
+                        <a href="sign-up.html">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<%= yield%>
